@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/productscrud", { useNewUrlParser: true,  useUnifiedTopology: true  })
+mongoose.connect("mongodb+srv:AliHassan:hassan@appcluster.sskjq.mongodb.net/test?authSource=admin&replicaSet=atlas-lb9psv-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", { useNewUrlParser: true,  useUnifiedTopology: true  })
 .then(() => console.log("Connected to Mongo...."))
 .catch((error) => console.log(error.message));
 module.exports = app;
